@@ -1,4 +1,4 @@
-# projeto2-arquitetura-em-camadas
+# Projeto 2 | Estudo de Caso de Arquitetura em Camadas: SQLite
 ## Introdução
 Esse projeto é um estudo de caso, contendo a documentação e mapeamento de requisitos e processos referentes à arquitetura em camadas. Esta pesquisa terá como base um sistema público do SQLite, um banco de dados open source.
 O sistema do SQLite foi escolhido devido a sua vasta documentação e o fato de ser um sistema um tanto quanto antigo, contendo diversos pontos a ser melhorados.
