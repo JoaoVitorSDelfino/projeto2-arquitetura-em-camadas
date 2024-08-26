@@ -1,7 +1,10 @@
 # Projeto 2 | Estudo de Caso de Arquitetura em Camadas: SQLite
+![image](https://github.com/user-attachments/assets/13901059-2bb9-4b2b-8601-dae5c299de8e)
 ## Introdução
 Esse projeto é um estudo de caso, contendo a documentação e mapeamento de requisitos e processos referentes à arquitetura em camadas. Esta pesquisa terá como base um sistema público do SQLite, um banco de dados open source.
 O sistema do SQLite foi escolhido devido a sua vasta documentação e o fato de ser um sistema um tanto quanto antigo, contendo diversos pontos a ser melhorados.
+- [Link Repositório GitHub SQLite](https://github.com/sqlite/sqlite?tab=readme-ov-file#the-amalgamation)
+- [Link Documentação SQLite](https://sqlite.org/src/doc/trunk/README.md)
 
 ## 1. Arquitetura Geral do SQLite
   O SQLite adota um padrão arquitetural de "arquitetura embutida" (embedded architecture) ou "monolítica" (monolithic architecture).
