@@ -39,3 +39,12 @@ O sistema do SQLite foi escolhido devido a sua vasta documentação e o fato de 
   - Controle de transações (commit e rollback).
   - Gerenciamento de bloqueios para garantir isolamento.
   - Implementação do protocolo ACID (Atomicidade, Consistência, Isolamento, Durabilidade).
+
+## 2. Funcionamento Interno
+O SQLite segue um fluxo simplificado para o processamento de operações de banco de dados:
+
+- Recepção de SQL: A API recebe uma instrução SQL e passa para a camada SQL.
+- Análise e Otimização: A instrução é analisada e otimizada na camada SQL.
+- Execução: O bytecode gerado é executado pela Máquina Virtual.
+- Acesso a Dados: Se a execução envolver dados, a camada B-tree acessa os registros correspondentes através do sistema de arquivos.
+- Resultado: O resultado da execução é retornado à API, que o entrega à aplicação.
