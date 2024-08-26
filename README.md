@@ -1,5 +1,6 @@
 # Projeto 2 | Estudo de Caso de Arquitetura em Camadas: SQLite
-![image](https://github.com/user-attachments/assets/13901059-2bb9-4b2b-8601-dae5c299de8e)
+<img src="https://github.com/user-attachments/assets/13901059-2bb9-4b2b-8601-dae5c299de8e" width="600" height="300">
+
 ## Introdução
 Esse projeto é um estudo de caso, contendo a documentação e mapeamento de requisitos e processos referentes à arquitetura em camadas. Esta pesquisa terá como base um sistema público do SQLite, um banco de dados open source.
 O sistema do SQLite foi escolhido devido a sua vasta documentação e o fato de ser um sistema um tanto quanto antigo, contendo diversos pontos a ser melhorados.
@@ -91,6 +92,6 @@ O SQLite segue um fluxo simplificado para o processamento de operações de banc
 - Tendo isso em mente, a solução seria criar uma versão para sistemas de médio até baixo-grande porte mantendo ainda a arquitetura projetada originalmente pelo SQLite.
 
 ### 4.3. Atualizar a documentação
-- Atualmente, a documentação do SQLite, é um pouco desatualizada em vista aos novos avanços em diversas áreas da programação, uma vez que não contém informações sobre possíveis integrações com diversos outros serviços como React.js, Flask, Djamgo (Sendo esses dois últimos escritos em Python, que vem ganhado muita popularidade nos últimos anos)
+- Atualmente, a documentação do SQLite, é um pouco desatualizada em vista aos novos avanços em diversas áreas da programação, uma vez que não contém informações sobre possíveis integrações com diversos outros serviços como React.js, Android, Flask, Djamgo (Sendo esses dois últimos escritos em Python, que vem ganhado muita popularidade nos últimos anos)
 #### Solução
 - Atualizar a documentação de acordo, contendo um possível guia para integração com diversas outras tecnologias como é feito em documentações mais recentes como [Google Cloud](https://cloud.google.com/docs?hl=pt-br) e [AWS](https://cloud.google.com/docs?hl=pt-br)
