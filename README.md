@@ -5,7 +5,9 @@ O sistema do SQLite foi escolhido devido a sua vasta documentação e o fato de 
 
 ## 1. Arquitetura Geral do SQLite
   O SQLite adota um padrão arquitetural de "arquitetura embutida" (embedded architecture) ou "monolítica" (monolithic architecture).
+  
   Primeiramente, vale-se destacar que uma arquitetura embutida e monolítica proporciona uma solução de banco de dados leve, rápida e de fácil integração, ideal para aplicações onde a simplicidade e a portabilidade são prioritárias. Ao contrário de sistemas de banco de dados que seguem uma arquitetura cliente-servidor ou distribuída, o SQLite é projetado para ser uma solução única e compacta que é diretamente embutida na aplicação.
+  
   Com isso em mente, segue com uma descrição um pouco mais detalhada sobre os padrões utilizados e suas vantagens no sistema em questão:
 ### 1.1. Arquitetura Embutida
   Características:
@@ -17,7 +19,7 @@ O sistema do SQLite foi escolhido devido a sua vasta documentação e o fato de 
     - Desempenho: Reduz a sobrecarga associada à comunicação cliente-servidor, pois a aplicação interage diretamente com a biblioteca do banco de dados.
 ### 1.2. Arquitetura Monolítica
   Características:
-    - Componente Único: O SQLite é implementado como uma única biblioteca monolítica. Toda a lógica de gerenciamento de banco de dados, incluindo a análise SQL, execução, e armazenamento, está contida em um único conjunto de código.
+  - Componente Único: O SQLite é implementado como uma única biblioteca monolítica. Toda a lógica de gerenciamento de banco de dados, incluindo a análise SQL, execução, e armazenamento, está contida em um único conjunto de código.
   - Desacoplamento Mínimo: Não há separação clara entre as camadas de controle, processamento e armazenamento. Em vez disso, todas essas responsabilidades são gerenciadas dentro da mesma biblioteca.
   Vantagens:
   - Eficiência: A integração monolítica permite otimizações que seriam mais difíceis de implementar em uma arquitetura de múltiplos componentes.
