@@ -2,8 +2,7 @@
 <img src="https://github.com/user-attachments/assets/13901059-2bb9-4b2b-8601-dae5c299de8e" width="600" height="300">
 
 ## Alunos
-- João Vitor Schiavinato Delfino RA: a2453363
-- Thiago Vinicius Akiyoshi Tagami RA: a2453401
+João Vitor Schiavinato Delfino RA: a2453363, Thiago Vinicius Akiyoshi Tagami RA: a2453401
 
 ## Introdução
 Esse projeto é um estudo de caso, contendo a documentação e mapeamento de requisitos e processos referentes à arquitetura em camadas. Esta pesquisa terá como base um sistema público do SQLite, um banco de dados open source.
