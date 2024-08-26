@@ -72,15 +72,20 @@ O SQLite segue um fluxo simplificado para o processamento de operações de banc
 ## 4. Proposta de melhoria
   SQLite é um sistema um tanto quanto antigo, com diversas partes do código entiquetadas como 'legado', e apesar de sua tamanha compatibilidade até mesmo em sistemas atuais, ainda tem pontos de possíveis melhorias.
 
-### 4.1 Visualização de tabelas e interface
+### 4.1. Visualização de tabelas e interface
 - Sendo um banco de dados que é rodado juntamente a aplicação, ele não tem uma forma explícita de visualizar de forma detalhada as tabelas e seus conteúdos de forma intuitiva/facilitada como outros bancos de dados que rodam com servidores ou até mesmo em cloud (como o Firebase)
 - A única maneira de manusear uma tabela de forma intuitiva é por meio do [SQLite Browser](https://sqlitebrowser.org/), uma boa ferramenta para testes mas sendo necessário download externo ao SQLite e possui uma interface um tanto quanto desatualizada e antiga.
 #### Solução
 - Modernizar a interface do [SQLite Browser](https://sqlitebrowser.org/) para se tornar mais amigável a novos usuários, com uma possível implementação de representação visual de tabelas e diagramas igual vemos em outros SQLs como [MySQL](https://www.mysql.com)
 
-### 4.2 Escalabilidade para sistemas de maior porte
+### 4.2. Escalabilidade para sistemas de maior porte
 - A ideia do SQLite é criar um banco de dados "de bolso" assim por dizer, o que significa que não foi muito bem pensado para aplicação de grande porte.
-- É citado na documentação oficial do SQLite "The Amalgamation" (traduzido do inglês, "A Amálgama"), que é uma possível solução para sistemas maiores, que consiste em uma técnica de agrupar todo o código fonte do SQLite em um só arquivo de 200 mil linhas de código, obtendo então uma melhoria de até 5% em velocidade.
+- É citado na documentação oficial do SQLite ["The Amalgamation"](https://www.sqlite.org/amalgamation.html/) (traduzido do inglês, "A Amálgama"), que é uma possível solução para sistemas maiores, que consiste em uma técnica de agrupar todo o código fonte do SQLite em um só arquivo de 200 mil linhas de código, obtendo então uma melhoria de até 5% em velocidade.
 #### Solução
 - Mesmo não sendo o objetivo do SQLite armazenar databases muito grandes, ainda seria interessante possuir uma alternativa melhor do que "The Amalgamation", tendo em vista a sua baixíssima legibilidade e melhoria descartável (apesar de 5% escalar melhor quanto mais dados, ainda é uma melhoria pequena a preço de sacrificar a arquitetura inteira do código).
 - Tendo isso em mente, a solução seria criar uma versão para sistemas de médio até baixo-grande porte mantendo ainda a arquitetura projetada originalmente pelo SQLite.
+
+### 4.3. Atualizar a documentação
+- Atualmente, a documentação do SQLite, é um pouco desatualizada em vista aos novos avanços em diversas áreas da programação, uma vez que não contém informações sobre possíveis integrações com diversos outros serviços como React.js, Flask, Djamgo (Sendo esses dois últimos escritos em Python, que vem ganhado muita popularidade nos últimos anos)
+#### Solução
+- Atualizar a documentação de acordo, contendo um possível guia para integração com diversas outras tecnologias como é feito em documentações mais recentes como [Google Cloud](https://cloud.google.com/docs?hl=pt-br) e [AWS](https://cloud.google.com/docs?hl=pt-br)
