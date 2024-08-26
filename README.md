@@ -9,9 +9,9 @@ O sistema do SQLite foi escolhido devido a sua vasta documentação e o fato de 
   Com isso em mente, segue com uma descrição um pouco mais detalhada sobre os padrões utilizados e suas vantagens no sistema em questão:
 ### 1.1. Arquitetura Embutida
   Características:
-    - Integrado na Aplicação: O SQLite é integrado diretamente no código da aplicação como uma biblioteca. Não requer a instalação ou execução de um servidor de banco de dados separado.
-    - Compilação Estática: O SQLite é compilado diretamente em aplicações, o que significa que todas as funcionalidades do banco de dados são acessíveis diretamente através das interfaces da biblioteca.
-    - Portabilidade: Por ser embutido, o SQLite pode ser facilmente portado para diferentes sistemas operacionais e plataformas, mantendo a mesma funcionalidade sem necessidade de ajustes adicionais.
+  - Integrado na Aplicação: O SQLite é integrado diretamente no código da aplicação como uma biblioteca. Não requer a instalação ou execução de um servidor de banco de dados separado.
+  - Compilação Estática: O SQLite é compilado diretamente em aplicações, o que significa que todas as funcionalidades do banco de dados são acessíveis diretamente através das interfaces da biblioteca.
+  - Portabilidade: Por ser embutido, o SQLite pode ser facilmente portado para diferentes sistemas operacionais e plataformas, mantendo a mesma funcionalidade sem necessidade de ajustes adicionais.
   Vantagens:
     - Simplicidade: Facilita a configuração e o deployment, pois não há necessidade de gerenciar servidores ou configurações complexas.
     - Desempenho: Reduz a sobrecarga associada à comunicação cliente-servidor, pois a aplicação interage diretamente com a biblioteca do banco de dados.
